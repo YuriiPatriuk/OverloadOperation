@@ -1,0 +1,5 @@
+﻿  Array.cpp
+C:\Users\Dev\Desktop\OverloadOperators1\OverloadOperators\Array.cpp(95,21): warning C4018: '<': signed/unsigned mismatch
+  OverloadOperators.cpp
+  Generating Code...
+  OverloadOperators.vcxproj -> C:\Users\Dev\Desktop\OverloadOperators1\Debug\OverloadOperators.exe
