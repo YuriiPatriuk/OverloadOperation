@@ -13,8 +13,10 @@ public:
 	Array& operator++();
 	Array operator++(int);
 
+	explicit operator int() const;
 	int & operator [] (int index);
 	bool operator == (const Array& other);//binary
+	Array operator()(const size_t index, size_t howMany);
 
 	void print() const;
 private:

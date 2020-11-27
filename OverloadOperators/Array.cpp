@@ -77,6 +77,16 @@ Array Array::operator++(int)
 	return old; 
 }
 
+Array::operator int() const
+{
+	int suma = 0;
+	for (size_t i = 0; i < size; i++)
+	{
+		suma += this->array[i];
+	}
+	return suma;
+}
+
 int& Array::operator[](int index)
 {
 	static int garbage;//0
@@ -101,6 +111,20 @@ bool Array::operator==(const Array& other)
 	}
 	else
 		return false;
+}
+
+Array Array::operator()(const size_t index, size_t howMany)
+{
+	if (index > size - 1)
+		return Array();
+	size_t k=0;
+	Array result(howMany);// 0000000000000000
+	for (size_t i = index; k < howMany && i < size ; i++)
+	{
+		result.array[k] = array[i];
+		k++;
+	}
+	return result;
 }
 
 void Array::print() const

@@ -17,18 +17,16 @@ int main()
     bool check= array1 == array2;
     std::cout <<"Check: "<< check << std::endl;
 
-    Array array3 = (array1 + array2); // array1(this) array2(other)
+    Array array3 = (1,5); // array1(this) array2(other)
     array3.print();
     
     (array3++).print();
     array3.print();
 
-
-
-
-
-
-
+    std::cout << "Suma: "<<(int)array3 << std::endl;
+    std::cout << "----------------------" << std::endl;
+    Array test = array3(2, 2);
+    test.print();
 
     //Array clone = array1;
     //clone.print();
